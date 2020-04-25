@@ -35,17 +35,15 @@ public class MainActivity extends AppCompatActivity {
         cf = findViewById(R.id.dicafe);
         home = findViewById(R.id.homealone);
         cook =  findViewById(R.id.nauan);
-        radioGroup = findViewById(R.id.radioGroup); //cái này nè
-        //------------------------------------
-
+        //-----------------------------------
+        radioGroup = findViewById(R.id.radioGroup);
         submit =  findViewById(R.id.buttonxacnhan);
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-        //------------Checkbox-------------------------
 
                 String str ="";
-
                 str+="Tên bạn: "+name.getText().toString();
                 str+="\nNgày sinh: "+date.getText().toString();
 
@@ -54,16 +52,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nu: str+="\nGiới tính : nữ"; break;
                 }
 
-                str+="\nSỏ thích: ";
+                str+="\nSở thích: ";
 
                 if(wfilm.isChecked()){
                     str =str+wfilm.getText().toString()+"; ";
                 }
-
                 if(lmusic.isChecked()){
                     str =str+lmusic.getText().toString()+"; ";
                 }
-
                 if(cf.isChecked()){
                     str =str+cf.getText().toString()+"; ";
                 }
@@ -79,5 +75,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
