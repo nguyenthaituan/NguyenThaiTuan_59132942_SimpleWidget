@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button submit;
     RadioGroup radioGroup;
 
-    CheckBox wfilm,lmusic,cf,home,cook;
+    CheckBox wfilm, lmusic, cf, home, cook;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,19 +55,19 @@ public class MainActivity extends AppCompatActivity {
                 str+="\nSở thích: ";
 
                 if(wfilm.isChecked()){
-                    str =str+wfilm.getText().toString()+"; ";
+                    str = str+wfilm.getText().toString()+"; ";
                 }
                 if(lmusic.isChecked()){
-                    str =str+lmusic.getText().toString()+"; ";
+                    str = str+lmusic.getText().toString()+"; ";
                 }
                 if(cf.isChecked()){
-                    str =str+cf.getText().toString()+"; ";
+                    str = str+cf.getText().toString()+"; ";
                 }
                 if(home.isChecked()){
-                    str =str+home.getText().toString()+"; ";
+                    str = str+home.getText().toString()+"; ";
                 }
                 if(cook.isChecked()){
-                    str =str+cook.getText().toString();
+                    str = str+cook.getText().toString();
                 }
 
                 str+=favourite.getText()+".";
